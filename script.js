@@ -1,3 +1,3 @@
-function closeWelcome() {
-    document.getElementById("welcome-screen").style.display = "none";
+function closeMessage() {
+    document.getElementById('welcome-message').style.display = 'none';
 }

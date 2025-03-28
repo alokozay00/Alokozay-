@@ -3,36 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="خدمات تایپ مقالات، ترجمه متون انگلیسی و آماده‌سازی نتایج مکاتب با کیفیت بالا">
-    <meta name="keywords" content="تایپ, ترجمه, مکاتب, تایپ آنلاین, ترجمه انگلیسی">
-    <meta name="author" content="فیض الرحمن الکوزی">
     <title>خدمات تایپ و ترجمه</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="خدمات تایپ مقالات، ترجمه متون، و آماده‌سازی نتایج مکاتب">
+    <meta name="keywords" content="تایپ, ترجمه, نتایج مکاتب, خدمات تایپ, خدمات ترجمه, تبدیل متن">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- بخش اصلی -->
-    <header>
-        <h1>خدمات تایپ و ترجمه</h1>
-        <p>تایپ مقالات، کتاب‌ها، ترجمه متون انگلیسی و آماده‌سازی نتایج مکاتب</p>
-    </header>
-
-    <!-- اطلاعات تماس -->
-    <section class="contact">
-        <h2>ارسال سفارش</h2>
-        <p>واتساپ: <a href="https://wa.me/93708665641">0708665641</a></p>
-        <p>ایمیل: <a href="mailto:alokozay1012@gmail.com">alokozay1012@gmail.com</a></p>
-    </section>
-
-    <!-- بخش خوش‌آمدگویی -->
-    <div id="welcome-screen">
-        <div class="welcome-content">
-            <h2>خوش آمدید!</h2>
-            <p>ارائه خدمات تایپ و ترجمه با بهترین کیفیت.</p>
-            <button onclick="closeWelcome()">ورود به سایت</button>
-        </div>
+    <div id="welcome-message" class="welcome">
+        <p>خوش آمدید! ما خدمات تایپ، ترجمه و آماده‌سازی نتایج مکاتب را ارائه می‌دهیم.</p>
+        <button onclick="closeMessage()">بستن</button>
     </div>
 
-    <script src="js/script.js"></script>
+    <header>
+        <h1>خدمات تایپ و ترجمه</h1>
+        <p>تایپ سریع، ترجمه حرفه‌ای، و آماده‌سازی نتایج مکاتب</p>
+    </header>
+
+    <section id="navigation">
+        <h2>
+            <a href="about.html">درباره ما</a> | 
+            <a href="faq.html">پرسش‌های متداول</a>
+        </h2>
+    </section>
+
+    <section id="order-form">
+        <h2>ارسال سفارش</h2>
+        <p style="color: red; font-weight: bold;">⚠ لطفاً قبل از ارسال سفارش، بخش <a href="about.html">درباره ما</a> و <a href="faq.html">پرسش‌های متداول</a> را مطالعه کنید.</p>
+        <form id="submitForm" method="POST" action="https://formsubmit.co/falokozay475@gmail.com" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="نام شما" required>
+            <input type="email" name="email" placeholder="ایمیل شما" required>
+            <textarea name="description" placeholder="توضیحات سفارش خود را اینجا وارد کنید..." required></textarea>
+            <input type="file" name="file" required>
+            <button type="submit">ارسال</button>
+        </form>
+    </section>
+
+    <footer>
+        <h3>تماس با ما</h3>
+        <p>واتساپ: 0708665641</p>
+        <p>تلگرام: 0708665641</p>
+        <p>ایمیل: <a href="mailto:falokozay475@gmail.com">falokozay475@gmail.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
